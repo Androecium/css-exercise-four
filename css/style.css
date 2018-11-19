@@ -1,4 +1,71 @@
 body {
   background-color: #dadada;
-  font-size: 10px;
+}
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  font-size: 100%;
+  font-family: sans-serif;
+}
+h2{
+  font-size: 200%;
+}
+
+.title{
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* Container holding the image and the text */
+.preview-baku, .preview-london, .preview-madrid, .preview-rome {
+    position: relative;
+}
+.preview-baku img, .preview-london img, .preview-madrid img, .preview-rome img {
+    width: 100%;
+    display: block;
+}
+/* Bottom right text */
+.text-block {
+    position: absolute;
+    top: 55px;
+    left: 35px;
+    color: #000000;
+
+}
+.preview-baku, .preview-london, .preview-madrid, .preview-rome {
+    display: flex;
+    padding: 15px 12px;
+    box-sizing: border-box;
+    width: 400px;
+    height: 400px;
+}
+    .content{
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+
+/* Mobile and Tablet Styles */
+@media only screen and (min-width: 575px) and (max-width: 990px) {
+
+
+/* Laptop Styles */
+@media only screen and (min-width: 991px) and (max width: 1198px)  {
+  .preview-baku, .preview-london, .preview-madrid, .preview-rome {
+    width: 50%;
+  }
+
+  /* Desktop Styles */
+  @media only screen and (min-width: 1199px) {
+  .preview-baku, .preview-london, .preview-madrid, .preview-rome {
+    width: 25%;
+  }
+  .content{
+    padding-left: 200px;
+  }
 }
